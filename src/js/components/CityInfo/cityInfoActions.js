@@ -5,7 +5,7 @@ export const types = {
 export function updateCityDescription(city) {
   return {
     type: types.UPDATE_CITY_DESCRIPTION,
-    payload: fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=a7c167253b5bc7cd8a89b64a62abd811`)
+    payload: fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=a7c167253b5bc7cd8a89b64a62abd811`)
             .then(response => response.json())
             .then(data => {
                 return {
